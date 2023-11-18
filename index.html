@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <!-- <link rel="icon" type="image/png" href="./Src/assets/icon.png"/> -->
+    <link rel="icon" type="image/jpeg" href="./Src/assets/icon2.jpeg"/>
+    
     <!-- bibliotecas -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -18,21 +20,21 @@ wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,6
     />
 
     <!-- scripts -->
-    <script src="./Src/scripts/index.js" defer></script>
+    <script src="./Src/scripts/index.js" defer type="module"></script>
 
     <title>Pokemon</title>
   </head>
   <!-- class= "bg-[url('./Src/assets/bg_1.jpg')]  -->
   <body
     class="bg-[url('./Src/assets/bg_2.webp')] 
-    bg-cover font-['Roboto_Mono'] max-w-screen-xl "
+    bg-cover font-['Roboto_Mono'] max-w-screen-3xl "
   >
-    <header class="h-20">
+    <header class="h-20 bg-gray-200">
       <!-- <h1>logo</h1> -->
       <nav></nav>
     </header>
-    <main class="flex">
-    <ul  class="flex gap-6 flex-wrap p-7 max-w-screen-lg">
+    <main class="flex gap-10 p-7 ">
+    <ul  class="flex gap-6 flex-wrap max-w-screen-xl">
       <li class="bg-amber-200 w-72 flex flex-col p-3 rounded-xl">
         <div class="flex justify-between">
           <span></span>
@@ -49,17 +51,14 @@ wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,6
           </h3>
           <div class="flex justify-between bg-gray-200 p-3">
             <ul class="flex flex-col gap-1.5">
-              <li>
-                <h3 class="text-lg font-medium">Peso</h3>
-                <h3 class="text-lg">6.0Kg</h3>
+              <li class="text-lg font-medium">Peso                
+                <h3 class="text-lg font-normal">6.0Kg</h3>
               </li>
-              <li>
-                <h3 class="text-lg font-medium">Altura</h3>
-                <h3 class="text-lg">0.4M</h3>
+              <li class="text-lg font-medium">Altura               
+                <h3 class="text-lg font-normal">0.4M</h3>
               </li>
-              <li>
-                <h3 class="text-lg font-medium">Genero</h3>
-                <h3 class="text-lg">1 e 2</h3>
+              <li class="text-lg font-medium">Genero                
+                <h3 class="text-lg font-normal">1 e 2</h3>
               </li>
             </ul>
             <ul class="flex flex-col w-28 gap-1.5">
@@ -68,6 +67,10 @@ wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,6
               <li class="text-lg">Choque do trovao</li>
             </ul>
           </div>
+        </div>
+        <div class="flex justify-between">
+          <button class="bg-orange-400 rounded-md font-medium px-2">Favoritos</button>
+          <button class="bg-orange-400 rounded-md font-medium px-2">Abrir perfil</button>
         </div>
       </li>
 
@@ -107,44 +110,9 @@ wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,6
             </ul>
           </div>
         </div>
-      </li>
-
-
-      <li class="bg-amber-200 w-72 flex flex-col p-3 rounded-xl">
         <div class="flex justify-between">
-          <span></span>
-          <h2 class="text-2xl font-medium text-right pl-5">Pikachu</h2>
-          <span
-            class="font-medium bg-red-900 text-orange-50 rounded-3xl w-7 text-center h-6"
-            >25</span
-          >
-        </div>
-        <img src="./Src/assets/pikachu.png" alt="" class="w-40 m-auto" />
-        <div>
-          <h3 class="bg-orange-400 rounded-xl text-center font-medium text-xl">
-            Tipo: Eletrico
-          </h3>
-          <div class="flex justify-between bg-gray-200 p-3">
-            <ul class="flex flex-col gap-1.5">
-              <li>
-                <h3 class="text-lg font-medium">Peso</h3>
-                <h3 class="text-lg">6.0Kg</h3>
-              </li>
-              <li>
-                <h3 class="text-lg font-medium">Altura</h3>
-                <h3 class="text-lg">0.4M</h3>
-              </li>
-              <li>
-                <h3 class="text-lg font-medium">Genero</h3>
-                <h3 class="text-lg">1 e 2</h3>
-              </li>
-            </ul>
-            <ul class="flex flex-col w-28 gap-1.5">
-              <li class="text-lg font-medium">Abilidades</li>
-              <li class="text-lg">Static</li>
-              <li class="text-lg">Choque do trovao</li>
-            </ul>
-          </div>
+          <button class="bg-orange-400 rounded-md font-medium px-2">Favoritos</button>
+          <button class="bg-orange-400 rounded-md font-medium px-2">Abrir perfil</button>
         </div>
       </li>
 
@@ -185,6 +153,10 @@ wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,6
             </ul>
           </div>
         </div>
+        <div class="flex justify-between">
+          <button class="bg-orange-400 rounded-md font-medium px-2">Favoritos</button>
+          <button class="bg-orange-400 rounded-md font-medium px-2">Abrir perfil</button>
+        </div>
       </li>
 
 
@@ -224,6 +196,52 @@ wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,6
             </ul>
           </div>
         </div>
+        <div class="flex justify-between">
+          <button class="bg-orange-400 rounded-md font-medium px-2">Favoritos</button>
+          <button class="bg-orange-400 rounded-md font-medium px-2">Abrir perfil</button>
+        </div>
+      </li>
+
+      <li class="bg-amber-200 w-72 flex flex-col p-3 rounded-xl">
+        <div class="flex justify-between">
+          <span></span>
+          <h2 class="text-2xl font-medium text-right pl-5">Pikachu</h2>
+          <span
+            class="font-medium bg-red-900 text-orange-50 rounded-3xl w-7 text-center h-6"
+            >25</span
+          >
+        </div>
+        <img src="./Src/assets/pikachu.png" alt="" class="w-40 m-auto" />
+        <div>
+          <h3 class="bg-orange-400 rounded-xl text-center font-medium text-xl">
+            Tipo: Eletrico
+          </h3>
+          <div class="flex justify-between bg-gray-200 p-3">
+            <ul class="flex flex-col gap-1.5">
+              <li>
+                <h3 class="text-lg font-medium">Peso</h3>
+                <h3 class="text-lg">6.0Kg</h3>
+              </li>
+              <li>
+                <h3 class="text-lg font-medium">Altura</h3>
+                <h3 class="text-lg">0.4M</h3>
+              </li>
+              <li>
+                <h3 class="text-lg font-medium">Genero</h3>
+                <h3 class="text-lg">1 e 2</h3>
+              </li>
+            </ul>
+            <ul class="flex flex-col w-28 gap-1.5">
+              <li class="text-lg font-medium">Abilidades</li>
+              <li class="text-lg">Static</li>
+              <li class="text-lg">Choque do trovao</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex justify-between">
+          <button class="bg-orange-400 rounded-md font-medium px-2">Favoritos</button>
+          <button class="bg-orange-400 rounded-md font-medium px-2">Abrir perfil</button>
+        </div>
       </li>
 
 
@@ -262,11 +280,15 @@ wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,6
               <li class="text-lg">Choque do trovao</li>
             </ul>
           </div>
+        </div>
+        <div class="flex justify-between">
+          <button class="bg-orange-400 rounded-md font-medium px-2">Favoritos</button>
+          <button class="bg-orange-400 rounded-md font-medium px-2">Abrir perfil</button>
         </div>
       </li>
     </ul>
-    <aside class="flex">
-      <h1 class="text-amber-700 text-3xl font-bold bg-amber-200 ">Favoritos</h1>
+    <aside class="flex flex-col  w-60 bg-gray-200 align-center" >
+      <h1 class="text-amber-700 text-3xl font-bold bg-amber-200 text-center ">Favoritos</h1>
     </aside>
     </main>
     <!-- <H1>Teste API</H1>

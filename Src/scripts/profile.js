@@ -1,7 +1,7 @@
 const baseURL = 'https://pokeapi.co/api/v2/pokemon/';
 
 async function getPokemon() {   
-    const pokemon = await fetch(`${baseURL}1`, {
+    const pokemon = await fetch(`${baseURL}`, {
         method: "GET",
         headers: {
             "Content-Type": "application/json",
